@@ -1,0 +1,129 @@
+:host {
+  display: block;
+}
+
+:root {
+  /* Basmalah vars */
+  --basmalah-top-margin: 1%;
+  --basmalah-width: calc(0.25 * 100%);
+  --basmalah-height: calc(0.299 * var(--basmalah-width));
+
+  /* MOJ logo vars */
+  --moj-logo-width: calc(0.1 * 100%);
+  --moj-logo-height: calc(1.212 * var(--moj-logo-width));
+
+  /* Title image vars */
+  --title-image-width: calc(0.2 * 100%);
+
+  /* Background vars */
+  --background-height: calc(100%);
+
+  /* Deed text vars */
+  --deed-text-margin: 6%;
+  --deed-text-padding-top: calc(
+          var(--moj-logo-height) + var(--basmalah-height) + var(--basmalah-top-margin)
+  );
+
+  /* Footer vars */
+  --footer-margin-right-left: var(--deed-text-margin);
+
+  /* Browser scroll bar vars */
+  --scroll-bar-y-axis-width: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+}
+
+.deed-container {
+  background: #f6f3cc;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.combined-shape {
+  z-index: 1000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.basmalah {
+  position: absolute;
+  left: calc((100% - var(--basmalah-width)) / 2);
+  width: var(--basmalah-width);
+  top: var(--basmalah-top-margin);
+}
+
+.moj-logo {
+  position: absolute;
+  left: calc((100% - var(--moj-logo-width)) / 2);
+  width: var(--moj-logo-width);
+  top: calc(var(--basmalah-height) + var(--basmalah-top-margin));
+}
+
+.title-image {
+  position: absolute;
+  width: var(--title-image-width);
+  top: calc(var(--basmalah-height) + var(--basmalah-top-margin));
+  right: 3%;
+}
+
+.footer-image {
+  position: absolute;
+  top: calc(var(--background-height) - var(--footer-margin-right-left));
+  left: 0;
+  width: calc(100% - (var(--footer-margin-right-left) * 2));
+  margin: 0 var(--footer-margin-right-left);
+}
+
+.deed-text {
+  font-family: 'ArabicFont', Arial, sans-serif;
+  direction: rtl;
+  white-space: pre-line;
+  z-index: 1000;
+  position: absolute;
+  top: calc(
+          (var(--moj-logo-height) + var(--basmalah-height)) +
+          var(--basmalah-top-margin) - var(--deed-text-margin)
+  );
+  padding: 4%;
+  width: calc(100% - var(--deed-text-margin) * 2);
+  border: 1px solid;
+  border-radius: 5px;
+  margin: var(--deed-text-margin);
+  height: calc(
+          var(--background-height) - var(--deed-text-padding-top) -
+          var(--deed-text-margin)
+  );
+  overflow-y: auto;
+  font-size: 14pt;
+  text-align: right;
+}
+
+.deed-barcode {
+  font-family: 'BarcodeFont', Arial, sans-serif;
+  position: absolute;
+  width: var(--title-image-width);
+  top: calc(var(--basmalah-height) + var(--basmalah-top-margin) + 35px);
+  left: 6%;
+  font-size: 23pt;
+}
+
+.deed-pagination {
+  display: none;
+  position: absolute;
+  bottom: 19px;
+  left: calc(50% - 50px);
+}
