@@ -3,8 +3,7 @@ import { Component, Prop, h } from '@stencil/core';
 @Component({
   tag: 'my-component',
   styleUrl: 'my-component.css',
-  shadow: true,
-  scoped: true,
+  // shadow: true,
   assetsDirs: [
     './public/'
   ]
@@ -13,7 +12,7 @@ export class MyComponent {
   /**
    * The first name
    */
-  @Prop() deedText: string;
+  @Prop() deedText: string = 'asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a asdf adfas dfa sdfa sdfasdf a sdfasdfasdf asdfasdf asdf asdaca sdf asd asd afasdfasdf a ';
 
   pages: {
     deedText: string,
@@ -27,12 +26,18 @@ export class MyComponent {
     const MAX_WORDS_PER_PAGE = 400;
 
     let pageNumber = 1;
-    for (let i = 0; i < deedTextArray.length; i += 400) {
+
+    let i = 0;
+    const arrayLength = deedTextArray.length;
+    while (i <= arrayLength) {
+
       this.pages.push({
-        deedText: deedTextArray.splice(i, MAX_WORDS_PER_PAGE).join(' '),
+        deedText: deedTextArray.splice(0, MAX_WORDS_PER_PAGE).join(' '),
         pageNumber
-      })
+      });
+
       pageNumber++;
+      i += MAX_WORDS_PER_PAGE;
     }
   }
 
@@ -52,11 +57,11 @@ export class MyComponent {
                 </div>
 
           <div class="deed-text">
-            ${page.deedText}
+            {page.deedText}
           </div>
 
           <div class="deed-pagination">
-            صفحة رقم ${page.pageNumber} من ${this.pages.length}
+            صفحة رقم {page.pageNumber} من {this.pages.length}
           </div>
         </div>
       )}

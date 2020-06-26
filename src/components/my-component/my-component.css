@@ -122,7 +122,6 @@ img {
 }
 
 .deed-pagination {
-  display: none;
   position: absolute;
   bottom: 19px;
   left: calc(50% - 50px);

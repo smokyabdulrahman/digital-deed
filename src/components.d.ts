@@ -10,15 +10,7 @@ export namespace Components {
         /**
           * The first name
          */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+        "deedText": string;
     }
 }
 declare global {
@@ -37,15 +29,7 @@ declare namespace LocalJSX {
         /**
           * The first name
          */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+        "deedText"?: string;
     }
     interface IntrinsicElements {
         "my-component": MyComponent;

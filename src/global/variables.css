@@ -1,0 +1,29 @@
+
+:root {
+    /* Basmalah vars */
+    --basmalah-top-margin: 1%;
+    --basmalah-width: calc(0.25 * 100%);
+    --basmalah-height: calc(0.299 * var(--basmalah-width));
+  
+    /* MOJ logo vars */
+    --moj-logo-width: calc(0.1 * 100%);
+    --moj-logo-height: calc(1.212 * var(--moj-logo-width));
+  
+    /* Title image vars */
+    --title-image-width: calc(0.2 * 100%);
+  
+    /* Background vars */
+    --background-height: calc(100%);
+  
+    /* Deed text vars */
+    --deed-text-margin: 6%;
+    --deed-text-padding-top: calc(
+            var(--moj-logo-height) + var(--basmalah-height) + var(--basmalah-top-margin)
+    );
+  
+    /* Footer vars */
+    --footer-margin-right-left: var(--deed-text-margin);
+  
+    /* Browser scroll bar vars */
+    --scroll-bar-y-axis-width: 24px;
+  }
