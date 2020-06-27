@@ -4,7 +4,7 @@
   "description": "Stencil Component Starter",
   "repository": {
     "type": "git",
-    "url": "https://github.com/allynkalda/Accordion-Component-Using-StencilJS.git"
+    "url": "https://github.com/smokyabdulrahman/digital-deed.git"
   },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
