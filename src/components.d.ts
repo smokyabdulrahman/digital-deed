@@ -6,7 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
+    interface DigitalDeed {
         /**
           * The first name
          */
@@ -14,32 +14,32 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLDigitalDeedElement extends Components.DigitalDeed, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLDigitalDeedElement: {
+        prototype: HTMLDigitalDeedElement;
+        new (): HTMLDigitalDeedElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "digital-deed": HTMLDigitalDeedElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
+    interface DigitalDeed {
         /**
           * The first name
          */
         "deedText"?: string;
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "digital-deed": DigitalDeed;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "digital-deed": LocalJSX.DigitalDeed & JSXBase.HTMLAttributes<HTMLDigitalDeedElement>;
         }
     }
 }

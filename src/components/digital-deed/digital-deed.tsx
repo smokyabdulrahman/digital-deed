@@ -1,14 +1,14 @@
 import { Component, Prop, h } from '@stencil/core';
 
 @Component({
-  tag: 'my-component',
-  styleUrl: 'my-component.css',
+  tag: 'digital-deed',
+  styleUrl: 'digital-deed.css',
   // shadow: true,
   assetsDirs: [
     './public/'
   ]
 })
-export class MyComponent {
+export class DigitalDeedComponent {
   /**
    * The first name
    */
